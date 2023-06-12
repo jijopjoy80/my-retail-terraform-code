@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = ">= 0.14.9"
+ # required_version = ">= 0.14.9"
 }
 
 provider "aws" {
@@ -17,7 +17,6 @@ provider "aws" {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "5.0.0"
-   required_version = ">= 0.14.9"
   name = "my-retail-vpc"
   cidr = "10.0.0.0/16"
 
