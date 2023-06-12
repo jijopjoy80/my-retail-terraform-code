@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.5.0"
+      version = "5.0"
     }
   }
 
@@ -16,7 +16,7 @@ provider "aws" {
 
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
-  version = "4.5.0"
+  version = "5.0.0"
 
   name = "my-retail-vpc"
   cidr = "10.0.0.0/16"
@@ -29,7 +29,7 @@ module "vpc" {
   enable_vpn_gateway = false
 
   tags = {
-    Terraform = "true" 
+    Terraform = "true"
     Environment = "dev"
   }
 }
