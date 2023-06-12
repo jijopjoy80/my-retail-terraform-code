@@ -1,4 +1,4 @@
 variable "my-tf-test-bucket"{
-  type:string
+  type=string
   default="fdkjjfjfjfdjfdjkjkkjgjkgjkkjkjjkgkj"
 }
